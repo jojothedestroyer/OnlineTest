@@ -1,0 +1,121 @@
+
+
+{% extends 'gcna/base.html' %}
+
+
+{% block content%}
+
+ {% for form in form %}
+
+<div class="card">
+ 
+  <div class="card-body">
+
+  </h5>
+    <p class="card-text">
+        <table id="vertical-1" class="table table-hover table-light">
+        <!-- <caption>First Way</caption> -->
+       
+
+       <tr>
+
+            <th>Station</th>
+            <td>{{ form.STATION }}</td>
+        </tr>  
+        <tr>
+            <th>Start Drying Date</th>
+            <td>{{ form.START_DRYING_DATE }}</td>
+        </tr>
+        <tr>
+            <th>Approximate End Drying Date</th>
+            <td>{{ form.APPROX_END_DRYING_DATE }}</td>
+        </tr>
+        <tr>
+            <th>End Drying Date </th>
+            <td>{{ form.END_DRYING_DATE }}</td>
+        </tr>
+
+
+
+<h4>Location</h4>
+
+
+
+<h5>Heavies</h5>
+
+        <tr>
+            <th>Ground Floor(heavy)</th>
+            <td>{{ form.Ground_Floorh }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Shelf(heavy)</th>
+            <td>{{ form.Shelfh }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Tray(heavy)</th>
+            <td>{{ form.Trayh }}</td>
+        </tr>
+
+        <tr>
+            <th>Final Moisture(heavy)</th>
+            <td>{{ form.FINAL_MOISTURE_H }}
+</td>
+        <tr>
+
+
+
+<h5>Lights</h5>
+
+        <tr>
+            <th>Ground Floor(light)</th>
+            <td>{{ form.Ground_Floorl }}</td>
+        </tr>
+        <tr>
+            <th>Shelf(light)</th>
+            <td>{{ form.Shelfl }}</td>
+        </tr>
+
+
+        <tr>
+            <th>Tray(Light)</th>
+            <td>{{ form.Trayl }}
+</td>
+        </tr>
+
+
+
+            <th>Final Moisture(light)</th>
+            <td>{{ form.FINAL_MOISTURE_L }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Batch Number</th>
+            <td>{{ form.BATCH_NUMBER }}</td>
+        </tr>    
+    </table>
+            <a href="{% url 'adhome' %}" class="btn btn-secondary">Return</a>
+ 
+
+
+
+                    </p>
+
+
+
+       
+ </div>        </div>
+
+<br>
+<br>
+<br>
+{% endfor %}
+
+{% endblock %}

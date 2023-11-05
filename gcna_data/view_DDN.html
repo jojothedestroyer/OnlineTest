@@ -1,0 +1,129 @@
+
+
+{% extends 'gcna/base.html' %}
+
+
+{% block content%}
+
+ {% for form in form %}
+
+<div class="card">
+ 
+  <div class="card-body">
+
+  </h5>
+    <p class="card-text">
+        <table id="vertical-1" class="table table-hover table-light">
+        <!-- <caption>First Way</caption> -->
+       
+
+       <tr>
+
+            <th>Station</th>
+            <td>{{ form.STATION }}</td>
+        </tr>  
+        <tr>
+            <th>Date of Pick up</th>
+            <td>{{ form.DATE_OF_PICK_UP }}</td>
+        </tr>
+        <tr>
+            <th>Final Moisture Content</th>
+            <td>{{ form.FINAL_MOISTURE_CONTENT }}</td>
+        </tr>
+<h4>FINAL MOISTURE CONTENT (%)</h4>
+
+<h5> LOCATION 1</h5>
+
+
+        <tr>
+            <th>Ground</th>
+            <td>{{ form.Ground_1 }}</td>
+        </tr>
+
+
+        <tr>
+            <th>1st Floor</th>
+            <td>{{ form.Floor_1st_1 }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>2nd Floor</th>
+            <td>{{ form.Floor_2nd_1 }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Floor Loft</th>
+            <td>{{ form.Floor_Loft_1 }}</td>
+        </tr>
+
+
+<h5> LOCATION 2</h5>
+
+
+
+        <tr>
+            <th>Ground</th>
+            <td>{{ form.Ground_2 }}</td>
+        </tr>
+        <tr>
+            <th>1st Floor</th>
+            <td>{{ form.Floor_1st_2 }}</td>
+        </tr>
+
+
+        <tr>
+            <th>2nd Floor</th>
+            <td>{{ form.Floor_2nd_2 }}
+</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Floor Loft</th>
+            <td>{{ form.Floor_Loft_2 }}
+</td>
+        <tr>
+            <th>Batch Number</th>
+            <td>{{ form.BATCH_NUMBER }}</td>
+        </tr>
+       
+
+        <tr>
+            <th>Corresponding Delivery Advice</th>
+            <td>{{ form.CORRESPONDING_DELIVERY_ADVICE }}</td>
+        </tr>
+   
+
+          <tr>
+            <th>Control Number</th>
+            <td>{{ form.Control_number }}</td>
+        </tr>
+   
+   
+
+   
+
+    </table>
+
+
+            <a href="" class="btn btn-success">Edit</a>
+
+
+                    </p>
+
+
+
+       
+ </div>        </div>
+
+<br>
+<br>
+<br>
+{% endfor %}
+
+{% endblock %}

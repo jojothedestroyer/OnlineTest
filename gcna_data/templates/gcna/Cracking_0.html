@@ -1,0 +1,102 @@
+{% extends 'gcna/base2.html' %}
+
+{% block content%}
+
+	<center>
+<br>
+	{% if submitted %}
+		Entry successfully added to database!!!
+	{% else %}
+
+		<form action="" method="POST" style=" background-color: #e4e4e4;
+
+    margin: 1px auto;
+    font-family: Raleway;
+    padding: 10px;
+    width: 55%;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);">
+
+<h6>Document No. GCNA-GMP</h6>
+<h6>Document Title:  </h6>
+<h6>Date Issued:  </h6>
+<h6>Version:  </h6>
+    <div class="card">
+ 
+  <div class="card-body">
+
+  </h5>
+    <p class="card-text">
+        <table id="vertical-1" class="table table-hover table-light">
+
+    <h1>Cracking Form</h1>
+ 
+		{% csrf_token %}
+{{form.Nutmeg_ID_No}}
+        <tr>
+            <th>STATION</th>
+            <td>{{ form.STATION }}</td>
+        </tr>
+    <tr>
+            <th>DATE OF CRACKING</th>
+            <td>{{ form.DATE_OF_CRACKING }}</td>
+        </tr>
+
+
+   <tr>
+            <th>Delivery Advice Number</th>
+            <td>{{ form.Delivery_Advice_Num }}</td>
+        </tr>
+<!-- covert to radio buttons -->
+
+
+
+
+        <tr>
+            <th>WAREHOUSE RECEIPT NUMBERS</th>
+            <td>{{ form.WAREHOUSE_RECEIPT_NUMBERS }}</td>
+        </tr>
+    <tr>
+            <th># OF BAGS </th>
+            <td>{{ form.NUM_OF_BAGS }}</td>
+        </tr>
+
+
+        <tr>
+            <th>LBS OF NUTMEGS CRACKED</th>
+            <td>{{ form.LBS_OF_NUTMEGS_CRACKED }}</td>
+        </tr>
+
+
+
+
+   <tr>
+            <th>Control Number</th>
+            <td>{{ form.Control_Num }}</td>
+        </tr>
+
+
+</table>
+
+        <tr>
+            <th><a href="{% url 'table' %}" class="btn btn-secondary">Return</a></th>
+        </tr>
+
+
+            <th><a type="submit" href="{% url 'add_Dispatch_Green_0' %}" role="button" class="btn btn-primary">Previous</a></th>	
+
+		<input type="submit" name="" value="submit" class="btn btn-success">
+ 
+
+            <th><a type="submit" href="{% url 'add_Floation_0' %}" role="button" class="btn btn-primary">Next</a></th>
+
+
+		</form>
+
+	{% endif %}
+
+	</center>
+{{ form.media }}
+
+{% endblock %}

@@ -1,0 +1,100 @@
+
+
+{% extends 'gcna/base2.html' %}
+
+
+{% block content%}
+
+ 
+<div class="card">
+ 
+  <div class="card-body">
+
+  </h5>
+    <p class="card-text">
+        <table id="vertical-1" class="table table-hover table-light">
+        <!-- <caption>First Way</caption> -->
+       
+
+
+
+         <tr>
+
+            <th>Nutmeg ID Number</th>
+            <td>{{ farmer_info_id.Nutmeg_ID_No }}</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>{{ farmer_info_id.name }}</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>{{ farmer_info_id.age }}</td>
+        </tr>
+        <tr>
+            <th>Parish</th>
+            <td>{{ farmer_info_id.parish }}</td>
+        </tr>
+
+
+        <tr>
+            <th>Village</th>
+            <td>{{ farmer_info_id.village }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Latitude</th>
+            <td>{{ farmer_info_id.latitude }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Longtitude</th>
+            <td>{{ farmer_info_id.longitude }}</td>
+        </tr>
+        <tr>
+            <th>Acreage</th>
+            <td>{{ farmer_info_id.acreage }}</td>
+        </tr>
+        <tr>
+            <th>Insurance Zone</th>
+            <td>{{ farmer_info_id.insurance_zone }}</td>
+        </tr>
+
+
+        <tr>
+            <th>Home Phone</th>
+            <td>{{ farmer_info_id.home_phone }}
+</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Photo of Land</th>
+            <td>{{ farmer_info_id.photo }}
+</td>
+        <tr>
+            <th>Mobile Phone</th>
+            <td>{{ farmer_info_id.mobile_phone }}</td>
+        </tr>
+
+        <tr>
+            <th><a href="{% url 'table' %}" class="btn btn-secondary">Return</a></th>
+        </tr>
+    </table>
+                    </p>
+
+
+
+       
+ </div>        </div>
+
+<br>
+<br>
+<br>
+
+{% endblock %}

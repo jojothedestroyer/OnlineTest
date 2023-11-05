@@ -1,0 +1,137 @@
+
+{% extends 'gcna/base2.html' %}
+
+
+{% block content%}
+
+
+<div class="card">
+ 
+  <div class="card-body">
+
+  </h5>
+    <p class="card-text">
+
+        <table id="vertical-1" class="table table-hover table-light">
+
+
+
+
+         <tr>
+            <th>DATE_1</th>
+            <td>{{ quality.DATE_1 }}</td>
+        </tr>
+        <tr>
+            <th>Station</th>
+            <td>{{ quality.STATION }}</td>
+        </tr>
+        <tr>
+            <th>Batch Codes</th>
+            <td>{{ quality.BATCH_NUMBER }}</td>
+        </tr>
+        <tr>
+            <th>REWORK</th>
+            <td>{{ quality.REWORK }}</td>
+        </tr>
+
+
+        <tr>
+            <th>SAMPLE_WEIGHT</th>
+            <td>{{ quality.SAMPLE_WEIGHT }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>ASSORTOR</th>
+            <td>{{ quality.ASSORTOR }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>SOUNDS</th>
+            <td>{{ quality.SOUNDS }}</td>
+        </tr>
+        <tr>
+            <th>PINHOLES</th>
+            <td>{{ quality.PINHOLES }}</td>
+        </tr>
+        <tr>
+            <th>CRACKED</th>
+            <td>{{ quality.CRACKED }}</td>
+        </tr>
+
+
+        <tr>
+            <th>BROKEN</th>
+            <td>{{ quality.BROKEN }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>PIECES</th>
+            <td>{{ quality.PIECES }}</td>
+        </tr>
+
+
+        <tr>
+            <th>FOREIGN_MATTER</th>
+            <td>{{ quality.FOREIGN_MATTER }}</td>
+        </tr>
+        <tr>
+            <th>SUPERVISOR</th>
+            <td>{{ quality.SUPERVISOR }}</td>
+        </tr>
+        <tr>
+            <th>COMMENTS</th>
+            <td>{{ quality.COMMENTS }}</td>
+        </tr>
+
+
+        <tr>
+            <th>SIGNED_BY</th>
+            <td>{{ quality.SIGNED_BY }}</td>
+        </tr>
+
+
+
+        <tr>
+            <th>Station_Manager</th>
+            <td>{{ quality.Station_Manager }}</td>
+        </tr>
+
+
+        <tr>
+            <th>DATE_OF_REPORT</th>
+            <td>{{ quality.DATE_OF_REPORT }}</td>
+        </tr>
+        <tr>
+            <th>SIGNED_BY_QUALITY_ASSURANCE_OFFICER</th>
+            <td>{{ quality.SIGNED_BY_QUALITY_ASSURANCE_OFFICER }}</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{ quality.DATE_2 }}</td>
+        </tr>
+ 
+   
+
+              <tr>
+                <a href="{% url 'table' %}" class="btn btn-secondary">Return</a>
+        </tr>
+    </table>
+                    </p>
+
+
+
+       
+ </div>        </div>
+
+<br>
+<br>
+<br>
+
+{% endblock %}
+
